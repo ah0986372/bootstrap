@@ -3,12 +3,16 @@
 --shadow: 5px 5px 5px 2px grey;
 --light: white;
 --padding: 5px;
+--bord-rad: 25px 25px 
 }
-/* header {
+body{
+    background-color: peachpuff;
+}
+header {
     text-align: center;
     text-shadow: 5px 5px 5px var(--light);
 
-} */
+}
 .maintitle{
     padding: 200px;
     margin-bottom: 1px;
@@ -19,9 +23,21 @@
 nav{
     box-shadow: var(--shadow);
 }
-.bodycontent{
+section{
+    background-color: var(--primary);
+    margin: 20px;
+}
+.bodytitle{
     text-transform: capitalize;
     padding: var(--padding);
 }
+.threecard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+/* .slide{
+    float: right;
+} */
 
 
