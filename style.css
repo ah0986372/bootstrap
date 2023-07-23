@@ -1,0 +1,27 @@
+:root{
+--primary: rgb(221, 194, 120);
+--shadow: 5px 5px 5px 2px grey;
+--light: white;
+--padding: 5px;
+}
+/* header {
+    text-align: center;
+    text-shadow: 5px 5px 5px var(--light);
+
+} */
+.maintitle{
+    padding: 200px;
+    margin-bottom: 1px;
+    background: url(images/sedona-title.jpg)  no-repeat center;
+    background-size: cover;
+    color: var(--primary) ;
+}
+nav{
+    box-shadow: var(--shadow);
+}
+.bodycontent{
+    text-transform: capitalize;
+    padding: var(--padding);
+}
+
+
