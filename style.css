@@ -1,61 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=WindSong:wght@500&display=swap');
 
-:root{
---primary: rgb(221, 194, 120);
---shadow: 5px 5px 5px 2px grey;
---light: white;
---padding: 5px;
---bord-rad: 25px 25px;
---base: peachpuff; 
+:root {
+    --primary: rgb(221, 194, 120);
+    --shadow: 5px 5px 5px 2px grey;
+    --light: white;
+    --padding: 5px;
+    --bord-rad: 25px 25px;
+    --base: peachpuff;
+    --dance: 'Dancing Script', cursive;
+    --wind: 'WindSong', cursive;
+    --slate: rgba(105, 90, 205, 0.527);
 }
-body{
+
+body {
     background-color: whitesmoke;
+
 }
+
 header {
     text-align: center;
     text-shadow: 5px 5px 5px var(--light);
-    
+
 }
-.maintitle{
+
+.topHeader {
+    font-size: 7rem;
+    font-family: var(--wind);
+    background-color: var(--slate);
+    margin-bottom: 0;
+
+}
+
+.maintitle {
     padding: 200px;
     margin-bottom: 1px;
-    background: url(images/sedona-title.jpg)  no-repeat center;
+    background: url(images/sedona-title.jpg) no-repeat center;
     background-size: cover;
-    color: var(--primary) ;
+    color: var(--light);
+
+
 }
-nav{
+
+.maintitle p {
+    font-size: 3rem;
+    background-color: var(--slate);
+    margin-top: 0;
+}
+
+nav {
     box-shadow: var(--shadow);
 }
 
-section{
+section {
     background-color: rgb(255, 200, 151);
     margin: 20px;
     box-shadow: var(--shadow);
     padding: 20px;
 }
-.bodytitle{
+
+.bodytitle {
     text-transform: capitalize;
     padding: var(--padding);
+    font-family: var(--dance);
 }
-.threecard{
+
+.bodytext {
+    columns: 2;
+}
+
+
+.bodytext strong {
+    color: orangered;
+}
+
+.threecard {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
 }
-.slide{
+
+.slide {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
 
 }
-.intro{
+
+.intro {
     text-align: center;
 }
-footer{
+
+footer {
     background-color: rgb(255, 200, 151);
     text-align: center;
     padding-bottom: 20px;
-    
 
 }
 
+.maps {
+    display: flex;
 
+}
+
+iframe {
+    margin-right: 10%;
+}
+
+.contactgrid {
+    position: relative;
+    background-color: var(--light);
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    text-align: center;
+}
+
+.contactgriditem {
+    border: 5px solid slategray;
+}
+
+.contactgrid i {
+    padding: 50px;
+}
+
+aside {
+    background-color: rgb(255, 200, 151);
+    margin: 20px;
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .bodytext {
+        columns: 1;
+        text-align: center;
+    }
+
+    .topHeader {
+
+        font-size: 4rem;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .maintitle {
+        margin: auto;
+        padding: 100px;
+    }
+
+    .maintitle p {
+        font-size: 2rem;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .threecard {
+        grid-template-columns: 1fr;
+    }
+
+    .maps {
+        display: grid;
+    }
+
+    iframe {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    article h2 {
+        text-align: center;
+    }
+
+}
