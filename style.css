@@ -1,17 +1,19 @@
+
 :root{
 --primary: rgb(221, 194, 120);
 --shadow: 5px 5px 5px 2px grey;
 --light: white;
 --padding: 5px;
---bord-rad: 25px 25px 
+--bord-rad: 25px 25px;
+--base: peachpuff; 
 }
 body{
-    background-color: peachpuff;
+    background-color: whitesmoke;
 }
 header {
     text-align: center;
     text-shadow: 5px 5px 5px var(--light);
-
+    
 }
 .maintitle{
     padding: 200px;
@@ -23,9 +25,12 @@ header {
 nav{
     box-shadow: var(--shadow);
 }
+
 section{
-    background-color: var(--primary);
+    background-color: rgb(255, 200, 151);
     margin: 20px;
+    box-shadow: var(--shadow);
+    padding: 20px;
 }
 .bodytitle{
     text-transform: capitalize;
@@ -36,8 +41,21 @@ section{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
 }
-/* .slide{
-    float: right;
-} */
+.slide{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.intro{
+    text-align: center;
+}
+footer{
+    background-color: rgb(255, 200, 151);
+    text-align: center;
+    padding-bottom: 20px;
+    
+
+}
 
 
